@@ -1,0 +1,57 @@
+$black: #3a4745;
+$red: #eb4c4b;
+$darkRed: #e63c3b;
+$green:  #6bb331;
+$darkGreen:  #5ba627;
+$blue: #6b96b1;
+$darkBlue: #628da9;
+$purple: #9a6a82;
+$white: #e4decf;
+$orange: #feb017;
+$darkOrange: #fea513;
+$lightRed: #fdaabc;
+$facebookBlue: #3B5998;
+
+$superLight: #f6f7f9;
+$light: #e6e7e9;
+$semiLight: #c6c7c9;
+$dark: #363739;
+$darkText: black;
+$lightText: #666769;
+$disabledText: $semiLight;
+
+$facebookBlue: #3B5998;
+
+$redUp1: #F4C0C1;
+$red: #E14F4E;
+$redDown1: #C71818;
+$redDown2: #B00707;
+
+$greenUp1: #A3E3CB;
+$green: #04AF6B;
+$greenDown1: #00782D;
+$greenDown2: #005213;
+
+$yellowUp1: #FFEFC7;
+$yellow: #FED25F;
+$yellowDown1: #FDAD23;
+$yellowDown2: #FC8E0D;
+
+$blueUp1: #C1D4E8;
+$blue: #5586BC;
+$blueDown1: #1C468B;
+$blueDown2: #092566;
+
+$hashtagBackground: $dark;
+
+$solidWhiteBackground: white;
+
+
+$whiteButtonGradient: linear-gradient(135deg, white 50%, #eee 50%);
+$greenButtonGradient: linear-gradient(135deg, $green 50%, $greenDown1 50%);
+$blueButtonGradient: linear-gradient(135deg, $blue 50%, $blueDown1 50%);
+$yellowButtonGradient: linear-gradient(135deg, $yellow 50%, $yellowDown1 50%);
+
+$redButtonGradient: linear-gradient(135deg, $red 50%, $darkRed 50%);
+
+$bodyBackground: linear-gradient(0deg, white, #eee);

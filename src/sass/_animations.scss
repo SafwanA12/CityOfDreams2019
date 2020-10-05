@@ -1,0 +1,16 @@
+.slide-ups {
+  &-enter-active .slide-up {
+    animation: bounceInUp 1s both;
+  }
+  &-leave-active .slide-up {
+    animation: slideOutDown 250ms both;
+  }
+}
+.popups {
+  &-enter-active .popup {
+    animation: bounceIn 1s both;
+  }
+  &-leave-active .popup {
+    animation: bounceOut 500ms both;
+  }
+}

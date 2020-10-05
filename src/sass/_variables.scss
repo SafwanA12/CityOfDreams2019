@@ -1,0 +1,15 @@
+$targetSize: 50px;
+$buttonHeight: 44px;
+$footerHeight: $targetSize;
+$defaultShadow: 0 0 3px 0 rgba($dark, .8);
+$footerBoxShadow: 0 0 3px rgba($dark, .8);
+$greenPattern: url(../images/backgrounds/green-patterned.png) center center $green;
+$blackPattern: url(../images/backgrounds/black-patterned.png) center center black;
+$redPattern: url(../images/backgrounds/red-patterned.png) center center $red;
+$yellowPattern: url(../images/backgrounds/yellow-patterned.png) center center $yellow;
+$greyPattern: url(../images/backgrounds/grey-patterned.png) center center $light;
+$superLightPattern: url(../images/backgrounds/light-patterned.png) center center $superLight;
+$defaultBackgroundSize: 892px auto;
+
+$headerHeight: 50px;
+$defaultPadding: 10px;
