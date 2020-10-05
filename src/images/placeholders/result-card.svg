@@ -1,0 +1,38 @@
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In  -->
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="800px" height="400px" viewBox="0 0 800 400" style="enable-background:new 0 0 800 400;"
+	 xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#01AF6B;}
+	.st1{fill:#FFFFFF;stroke:#333333;stroke-width:27.2727;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#333333;}
+</style>
+<defs>
+</defs>
+<rect class="st0" width="800" height="400"/>
+<g>
+	<circle class="st1" cx="400" cy="180" r="100"/>
+	<g>
+		<circle class="st2" cx="400" cy="180" r="100"/>
+	</g>
+	<path class="st3" d="M400,230c11,0,20-9,20-20h-40C380,221,389,230,400,230z"/>
+	<circle class="st3" cx="350" cy="200" r="10"/>
+	<circle class="st3" cx="450" cy="200" r="10"/>
+	<g>
+		<path class="st1" d="M370,280h-6c5.5,0,10-4.5,10-10s-4.5-10-10-10h-20v-20c0-5.5-4.5-10-10-10s-10,4.5-10,10v27.7
+			c-6.1,5.5-10,13.4-10,22.3c0,16.6,13.4,30,30,30h20c5.5,0,10-4.5,10-10s-4.5-10-10-10h6c5.5,0,10-4.5,10-10S375.5,280,370,280z"/>
+		<path class="st1" d="M486,290c0-8.9-3.9-16.8-10-22.3V240c0-5.5-4.5-10-10-10s-10,4.5-10,10v20h-20c-5.5,0-10,4.5-10,10
+			s4.5,10,10,10h-6c-5.5,0-10,4.5-10,10s4.5,10,10,10h6c-5.5,0-10,4.5-10,10s4.5,10,10,10h20c0,0,0,0,0,0
+			C472.6,320,486,306.6,486,290z"/>
+	</g>
+	<g>
+		<path class="st2" d="M370,280h-6c5.5,0,10-4.5,10-10s-4.5-10-10-10h-20v-20c0-5.5-4.5-10-10-10s-10,4.5-10,10v27.7
+			c-6.1,5.5-10,13.4-10,22.3c0,16.6,13.4,30,30,30h20c5.5,0,10-4.5,10-10s-4.5-10-10-10h6c5.5,0,10-4.5,10-10S375.5,280,370,280z"/>
+		<path class="st2" d="M486,290c0-8.9-3.9-16.8-10-22.3V240c0-5.5-4.5-10-10-10s-10,4.5-10,10v20h-20c-5.5,0-10,4.5-10,10
+			s4.5,10,10,10h-6c-5.5,0-10,4.5-10,10s4.5,10,10,10h6c-5.5,0-10,4.5-10,10s4.5,10,10,10h20c0,0,0,0,0,0
+			C472.6,320,486,306.6,486,290z"/>
+	</g>
+</g>
+</svg>

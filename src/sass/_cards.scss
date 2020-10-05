@@ -1,0 +1,85 @@
+.cards {
+    color: $darkText;
+    padding: 10px;
+
+    @media (min-width: 640px) {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+}
+
+.card {
+
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(black, .4);
+
+
+    @media (min-width: 640px) {
+        margin: 5px;
+        border-radius: 5px;
+        width: calc(50% - 10px);
+    }
+    @media (min-width: 960px) {
+        width: calc(100%/3 - 10px);
+    }
+    @media (min-width: 1280px) {
+        width: calc(25% - 10px);
+    }
+
+    &.default-content {
+        width: 100%;
+        border-left: 15px solid $yellow;
+
+        .card-content {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+    &-pic {
+        width: 100%;
+
+        &-wrapper {
+            font-size: 0;
+        }
+    }
+
+    &-header {
+        position: relative;
+        font-size: 0;
+        background-color: white;
+
+        &-copy {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            border-bottom: 5px solid $dark;
+            background-color: white;
+            @include normal-title-text;
+            padding: 10px;
+            line-height: 1.4em;
+            box-decoration-break: clone;
+        }
+    }
+
+    &-content {
+        color: $darkText;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 15px;
+        line-height: normal;
+    }
+
+    &-footer {
+        padding: 15px;
+    }
+}

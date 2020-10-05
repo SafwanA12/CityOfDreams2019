@@ -1,0 +1,10 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .shape {
+      fill: white;
+      }
+    </style>
+  </defs>
+  <path class="shape" d="M72.5,22.5A12.5,12.5,0,1,1,60,10,12.5,12.5,0,0,1,72.5,22.5ZM60,47.5A12.5,12.5,0,1,0,72.5,60,12.5,12.5,0,0,0,60,47.5ZM60,85A12.5,12.5,0,1,0,72.5,97.5,12.5,12.5,0,0,0,60,85Z"/>
+</svg>

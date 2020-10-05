@@ -1,0 +1,68 @@
+.screen-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    visibility: hidden;
+
+    &.screen-menu-open  {
+        visibility: inherit;
+    }
+
+    ul {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        display: inline-flex;
+        flex-direction: column;
+        box-shadow: $defaultShadow;
+        background-color: white;
+
+        li {
+            display: flex;
+            height: 50px;
+            padding: 0 20px 0 50px;
+            align-items: center;
+            @include cap-text;
+            font-weight: 800;
+            font-size: 12px;
+
+            background: no-repeat left 10px center;
+            background-size: 30px 30px;
+
+            &::before {
+                content: '';
+            }
+
+            &.flag-icon {
+
+                background-image: url(../images/icons/flag-alt-1.svg);
+            }
+
+            &.edit-icon,
+            &.pencil-icon {
+
+                background-image: url(../images/icons/pencil-alt-2.svg);
+            }
+
+            &.trash-icon,
+            &.delete-icon {
+
+                background-image: url(../images/icons/trash-alt-1.svg);
+            }
+
+            &.switch-on-icon {
+
+                background-image: url(../images/icons/switch-on-alt-1.svg);
+            }
+
+            &.switch-off-icon {
+
+                background-image: url(../images/icons/switch-off-alt-1.svg);
+            }
+
+        }
+    }
+}

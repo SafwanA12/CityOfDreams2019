@@ -1,0 +1,87 @@
+<header class="screen-header" ng-class="screen.classForType">
+    <i class="go-back hide-on-keyboard" ng-click="screen.goBack(screen.response)"></i>
+    <h1>{{screen.title}}</h1>
+    <i class="hide-on-keyboard"></i>
+    <span class="done show-on-keyboard" ng-click="">Done</span>
+    <div class="screen-header-tip" ng-if="!screen.isEdit">
+        <p>{{screen.getScreenTip(screen.response)}}</p>
+    </div>
+</header>
+<main class="screen-content" ng-class="screen.classForType">
+    <div class="screen-preview hide-on-keyboard" ng-class="{'no-images': !screen.response.images.length}">
+        <!--<div class="screen-preview-empty-message"></div>-->
+        <ul class="screen-preview-pics">
+            <li ng-repeat="image in screen.response.images track by image.id"
+                class="screen-preview-pic"
+                ng-click="screen.preview($index)">
+                <div class="screen-preview-pic-index">{{$index + 1}} of {{screen.response.images.length}}</div>
+                <div class="screen-preview-pic-upload" ng-style="{'background-image': 'url(\'{{image.path}}\')'}"></div>
+                <div class="screen-preview-pic-upload-remove" ng-if="!screen.isEdit" ng-click="screen.removePic($index)"></div>
+            </li>
+        </ul>
+    </div>
+    <div ng-if="screen.store.where" class="response-location hide-on-keyboard">
+        <div ng-if="screen.store.where.name" class="response-location-name">{{screen.store.where.name}}</div>
+        <div class="response-location-address">{{screen.store | address}}</div>
+    </div>
+    <ul class="screen-actions hide-on-keyboard">
+        <li class="screen-action add-location-icon"
+            ng-class="{disabled: screen.isEdit}"
+            ng-click="screen.chooseStore(screen.isEdit)">
+            <img src="./images/icons/map-plus-alt-1.svg">
+            <span role="label">Pick A Location</span>
+        </li>
+        <li ng-if="screen.isHint" class="screen-action add-pic-icon"
+            ng-class="{disabled: screen.response.images.length > 4 || screen.isEdit}"
+            ng-click="screen.choosePic(screen.isEdit)">
+            <img src="./images/icons/photo-plus-alt-1.svg">
+            <span role="label">Add A Pic</span>
+        </li>
+        <li class="screen-action take-pic-icon"
+            ng-class="{disabled: screen.response.images.length > 4 || screen.isEdit}"
+            ng-click="screen.takePic(screen.isEdit)">
+            <img src="./images/icons/camera-plus-alt-1.svg">
+            <span role="label">Take A Pic</span>
+        </li>
+    </ul>
+    <label ng-if="!screen.excludePrice"
+           ng-class="{required: screen.requirePrice, valid: screen.response.price.length}"
+           class="response-price-wrapper">
+        <input tabIndex="-1" class="response-price"
+               placeholder="e.g. $5 or $20/lb"
+               autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
+               ng-model="screen.response.price"/>
+        <span role="label">What's the price?</span>
+        <div class="highlighter"></div>
+    </label>
+    <label class="response-note-wrapper" ng-class="{required: screen.isHint}">
+        <textarea tabIndex="-1" class="response-note" ng-model="screen.response.note"
+                  maxlength="1000"
+                  placeholder="ex. {{screen.notePlaceholder}}"></textarea>
+        <span role="label">{{screen.isHint ? "What's your hint?" : "Can you tell us more?"}}</span>
+        <div class="highlighter"></div>
+    </label>
+</main>
+<footer class="screen-footer hide-on-keyboard">
+    <p class="screen-footer-info">Tap Here To {{screen.isEdit ? 'Save' : 'Send'}} Your {{screen.isHint ? 'Hint' : 'Response'}}.</p>
+    <div role="button" class="save-button"
+         ng-class="{disabled: !screen.canSave(screen.response)}" ng-click="screen.save(screen.response)">
+        {{screen.isEdit ? 'Save It' : 'Send It'}}
+    </div>
+</footer>
+<screen-tip ng-if="screen.isAvailable" tip-title="So, you found it." tip-id="responseEditorFound">
+    <p>Now it's time to let the shopper know what you found and where you are.</p>
+    <p>Try include any info you think is useful, like the location in the store and how many are available.</p>
+    <p>Adding photos lets the shopper know you found exactly what they're looking for.</p>
+    <p>Remember you can only tag the item at your current location. If you know where to find it but aren't there now you can send a hint instead.</p>
+</screen-tip>
+<screen-tip ng-if="screen.isHint" tip-title="So, you have a hint." tip-id="responseEditorSuggest">
+    <p>Send a hint to suggest locations where the item can be found.</p>
+    <p>They're also a great way to get more info about what the shopper wants. Ask for more pics or additional details.</p>
+</screen-tip>
+<screen-tip ng-if="screen.isUnavailable" tip-title="So, you didn't find it." tip-id="responseEditorNotFound">
+    <p>When you can't find something at a location that you thought would have it, we call that a "miss".<p>
+    <p>Misses are extremely helpful because they let shoppers know where NOT to look and save them valuable time.<p>
+    <p>Try to include any info you think is useful, like when the item might be back in stock.</p>
+</screen-tip>
+<spinner class="saving-spinner" ng-class="{open: screen.saving}"></spinner>

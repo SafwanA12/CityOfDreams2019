@@ -1,0 +1,18 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: white;
+      }
+
+      .cls-2 {
+        fill: #333;
+      }
+    </style>
+  </defs>
+  <title>walkthru</title>
+  <g>
+    <circle class="cls-1" cx="75" cy="75" r="75"/>
+    <path class="cls-2" d="M67.06,101.47a10.56,10.56,0,0,1-7.49-3.1L43.69,82.49a10.59,10.59,0,0,1,15-15l8.4,8.4L91.34,51.63a10.59,10.59,0,1,1,15,15L74.55,98.37A10.56,10.56,0,0,1,67.06,101.47Z"/>
+  </g>
+</svg>
